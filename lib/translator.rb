@@ -9,7 +9,7 @@ def load_library(file_path)
  }
  emoticons.each do |key, value|
    newHash[:get_meaning][value[1]] = key
-   newHash[:get_emoticon][value[0]] = key
+   newHash[:get_emoticon][value[0]] = value[1]
  end
 # binding.pry
 newHash
