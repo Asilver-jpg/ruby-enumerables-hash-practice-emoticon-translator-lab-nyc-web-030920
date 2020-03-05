@@ -32,5 +32,5 @@ def get_english_meaning(yaml,str )
  emote = emoticons[:get_meaning][str]
  return emote
  end
-
+return "Sorry, that emoticon was not found"
 end
