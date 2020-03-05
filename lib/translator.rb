@@ -19,12 +19,18 @@ end
 
 def get_japanese_emoticon(yaml, str)
   emoticons = load_library(yaml)
+  if emoticons[:get_emoticon][str]
   emote = emoticons[:get_emoticon][str]
-  emote
+  return emote
+end
+return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(yaml,str )
  emoticons = load_library(yaml)
+ if emoticons[:get_meaning][str]
  emote = emoticons[:get_meaning][str]
- emote
+ return emote
+ end
+
 end
