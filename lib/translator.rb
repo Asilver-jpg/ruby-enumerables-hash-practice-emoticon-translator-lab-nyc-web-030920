@@ -17,20 +17,8 @@ end
 
 def get_japanese_emoticon(yaml, str)
   emoticons = load_library(yaml)
-  emotions.each do |key, value|
-    binding.pry
-    if value[0] == str
-      return value[1]
-    end
-    end
 end
 
 def get_english_meaning(yaml,str )
  emoticons = load_library(yaml)
- 
-  emotions.each do |key, value|
-    if value[0] == str
-      return key
-    end
-    end
 end
