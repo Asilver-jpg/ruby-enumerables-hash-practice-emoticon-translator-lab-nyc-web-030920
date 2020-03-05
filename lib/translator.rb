@@ -11,7 +11,7 @@ def load_library(file_path)
    newHash[:get_meaning][value[1]] = key
    newHash[:get_emoticon][value[0]] = key
  end
- binding.pry
+# binding.pry
 newHash
 end
 
